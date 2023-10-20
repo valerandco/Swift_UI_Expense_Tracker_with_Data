@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88276AC82AE31F2A006E31A9 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88276AC72AE31F2A006E31A9 /* ExpenseView.swift */; };
+		88276ACA2AE31F39006E31A9 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88276AC92AE31F39006E31A9 /* CategoriesView.swift */; };
+		88276ACC2AE32492006E31A9 /* GroupedExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88276ACB2AE32492006E31A9 /* GroupedExpense.swift */; };
 		88B113622ADFA41D00F6E48F /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B113612ADFA41D00F6E48F /* ExpenseTrackerApp.swift */; };
 		88B113642ADFA41D00F6E48F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B113632ADFA41D00F6E48F /* ContentView.swift */; };
 		88B113662ADFA42100F6E48F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B113652ADFA42100F6E48F /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		88B113732ADFA42100F6E48F /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B113722ADFA42100F6E48F /* ExpenseTrackerTests.swift */; };
 		88B1137D2ADFA42100F6E48F /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1137C2ADFA42100F6E48F /* ExpenseTrackerUITests.swift */; };
 		88B1137F2ADFA42100F6E48F /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1137E2ADFA42100F6E48F /* ExpenseTrackerUITestsLaunchTests.swift */; };
+		88B1138F2ADFA46200F6E48F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1138E2ADFA46200F6E48F /* Expense.swift */; };
+		88B113912ADFA97800F6E48F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B113902ADFA97800F6E48F /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88276AC72AE31F2A006E31A9 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		88276AC92AE31F39006E31A9 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		88276ACB2AE32492006E31A9 /* GroupedExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedExpense.swift; sourceTree = "<group>"; };
 		88B1135E2ADFA41D00F6E48F /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B113612ADFA41D00F6E48F /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		88B113632ADFA41D00F6E48F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		88B113782ADFA42100F6E48F /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B1137C2ADFA42100F6E48F /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		88B1137E2ADFA42100F6E48F /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88B1138E2ADFA46200F6E48F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		88B113902ADFA97800F6E48F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		88B113602ADFA41D00F6E48F /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				88B1138D2ADFA45400F6E48F /* Model */,
+				88B1138C2ADFA44A00F6E48F /* View */,
 				88B113612ADFA41D00F6E48F /* ExpenseTrackerApp.swift */,
 				88B113632ADFA41D00F6E48F /* ContentView.swift */,
 				88B113652ADFA42100F6E48F /* Assets.xcassets */,
@@ -125,6 +137,25 @@
 				88B1137E2ADFA42100F6E48F /* ExpenseTrackerUITestsLaunchTests.swift */,
 			);
 			path = ExpenseTrackerUITests;
+			sourceTree = "<group>";
+		};
+		88B1138C2ADFA44A00F6E48F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88276AC72AE31F2A006E31A9 /* ExpenseView.swift */,
+				88276AC92AE31F39006E31A9 /* CategoriesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88B1138D2ADFA45400F6E48F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88B1138E2ADFA46200F6E48F /* Expense.swift */,
+				88B113902ADFA97800F6E48F /* Category.swift */,
+				88276ACB2AE32492006E31A9 /* GroupedExpense.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +222,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					88B1135D2ADFA41D00F6E48F = {
 						CreatedOnToolsVersion = 14.3;
@@ -257,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88276AC82AE31F2A006E31A9 /* ExpenseView.swift in Sources */,
+				88B1138F2ADFA46200F6E48F /* Expense.swift in Sources */,
+				88276ACC2AE32492006E31A9 /* GroupedExpense.swift in Sources */,
+				88276ACA2AE31F39006E31A9 /* CategoriesView.swift in Sources */,
 				88B113642ADFA41D00F6E48F /* ContentView.swift in Sources */,
 				88B113622ADFA41D00F6E48F /* ExpenseTrackerApp.swift in Sources */,
+				88B113912ADFA97800F6E48F /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +367,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -391,6 +428,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,6 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

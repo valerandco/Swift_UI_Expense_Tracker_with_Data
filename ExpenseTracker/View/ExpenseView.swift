@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ExpenseView: View {
+    
+    @Query(sort: [
+        SortDescriptor(\Expense.date, order: .reverse)
+    ], animation: .snappy) private var allExpenses: [Expense]
+    
+    @State private var groupedExpenses: [GropedExpenses] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            List{
+                
+            }
+            .navigationTitle("Expenses")
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing){
+                    Button{
+                        
+                    }label: {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.title3)
+                    }
+                }
+            }
+        }
     }
 }
 
